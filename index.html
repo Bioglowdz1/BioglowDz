@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BioGlowDZ - Produits Naturels</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #2a9d8f;
+        }
+        .product {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+            background-color: #ffffff;
+        }
+        .product img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .buy-options select,
+        .form input, .form select, .form textarea {
+            padding: 10px;
+            margin: 10px 0;
+            width: 100%;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .buy-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #2a9d8f;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .submit-btn {
+            background-color: #2a9d8f;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Brand Name -->
+        <h1>BioGlowDZ - Produits Naturels (المنتجات الطبيعية)</h1>
+
+        <!-- Product Section Title -->
+        <h2>Les Produits (المنتجات)</h2>
+
+        <!-- Product 1: Lemon Cake -->
+        <div class="product">
+            <h3>Lemon Cake Body Pack</h3>
+            <img src="lemon-cake.jpg" alt="Lemon Cake Body Pack">
+            <p>Un pack naturel au parfum de citron pour une peau douce et éclatante.</p>
+            <label for="options1">Choisissez le format (حدد الشكل):</label>
+            <select id="options1" class="buy-options">
+                <option value="full-pack">Pack Complet (الحزمة الكاملة)</option>
+                <option value="body-butter">Body Butter (زبدة الجسم)</option>
+                <option value="scrub">Gommage (التقشير)</option>
+            </select>
+            <p>Prix: 1500 DA</p>
+            <a href="#" class="buy-button">Ajouter au Panier (أضف إلى السلة)</a>
+        </div>
+
+        <!-- Product 2: Strawberry Cake -->
+        <div class="product">
+            <h3>Strawberry Cake Body Pack</h3>
+            <img src="strawberry-cake.jpg" alt="Strawberry Cake Body Pack">
+            <p>Un parfum sucré de fraise pour une peau nourrie et hydratée.</p>
+            <label for="options2">Choisissez le format (حدد الشكل):</label>
+            <select id="options2" class="buy-options">
+                <option value="full-pack">Pack Complet (الحزمة الكاملة)</option>
+                <option value="body-butter">Body Butter (زبدة الجسم)</option>
+                <option value="scrub">Gommage (التقشير)</option>
+            </select>
+            <p>Prix: 1500 DA</p>
+            <a href="#" class="buy-button">Ajouter au Panier (أضف إلى السلة)</a>
+        </div>
+
+        <!-- Order Form -->
+        <h2>Formulaire de Commande (نموذج الطلب)</h2>
+        <form class="form">
+            <input type="text" name="first_name" placeholder="Prénom (الاسم الأول)" required>
+            <input type="text" name="last_name" placeholder="Nom de famille (اللقب)" required>
+            <input type="tel" name="phone" placeholder="Numéro de téléphone (رقم الهاتف)" required>
+            <input type="email" name="email" placeholder="Email (البريد الإلكتروني)" required>
+            
+            <label for="wilaya">Wilaya (الولاية):</label>
+            <select id="wilaya" name="wilaya" required>
+                <option value="Alger">Alger (الجزائر)</option>
+                <option value="Oran">Oran (وهران)</option>
+                <option value="Constantine">Constantine (قسنطينة)</option>
+                <!-- Add more wilayas as needed -->
+            </select>
+            
+            <label for="delivery">Mode de Livraison (طريقة التوصيل):</label>
+            <select id="delivery" name="delivery" required>
+                <option value="home">Livraison à domicile (التوصيل إلى المنزل)</option>
+                <option value="zr-express">Point ZR Express (نقطة ZR Express)</option>
+            </select>
+            
+            <textarea name="address" placeholder="Adresse exacte pour la livraison (العنوان الكامل للتوصيل)" required></textarea>
+            
+            <button type="submit" class="submit-btn">Passer la Commande (إرسال الطلب)</button>
+        </form>
+    </div>
+
+</body>
+</html>
